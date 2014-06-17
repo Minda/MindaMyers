@@ -8,11 +8,7 @@
     display: flex;
     position:fixed;
     width: 100vw;
-    top: -5px;
-}
-
-#fixed-header {
-
+    top: -20px;
 }
 
 @media all and (max-width: 699px) {
@@ -21,11 +17,23 @@
   }
 }
 
+h3 {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 350%;
+    font-family: 'Rouge Script', cursive;
+    -webkit-text-stroke: .8px black;
+    text-shadow: 1px 1px 0 #fef6e9,-1px -1px 0 #fef6e9, 4px 4px 0 rgba(52,54,56,.2);
+}
+
+
 #menu-items {
     width: auto;
     margin: 0px auto;
     position: relative;
-    bottom: 5px;
+    bottom: -7px;
 }
 
 #main-menu a{
@@ -38,7 +46,7 @@
 
 #intro {
     background-color: #CCBFFA;
-    margin-top: 80px;
+    margin-top: 70px;
     padding-top: 25px;
 }
 
@@ -57,9 +65,18 @@
 #initials {
     font-family: 'Rammetto One', cursive;
     color: #F4D276;
-    font-size: 430%;
-    bottom: -17px;
+    font-size: 450%;
+    bottom: -9px;
     display: inline-block;
     position: relative;
     padding: 0px 15px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #383737;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 120%;
 }
