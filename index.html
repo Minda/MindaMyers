@@ -9,9 +9,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Minda Myers Web Portfolio</title>
+    <title>Minda Myers Makes Websites</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Rammetto+One|Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -32,24 +34,42 @@
 </head>
 
 <body>
-    <ul class="menu">
-        <li><a href="#/view1">view1</a>
-        </li>
-        <li><a href="#/view2">view2</a>
-        </li>
-    </ul>
-
+    <div id="fixed-header">
+        <div class="flexbox-container" id="main-menu">
+            <div id="menu-items">
+                <a href="#intro">Home</a>
+                <a href="#featured-work">Portfolio</a>
+                <div id="initials">MM</div>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+    <section id="intro" class="website-section">
+        <h3>Hello,
+            <br>my name is Minda
+            <br>and I am a
+            <br>front end web programmer.</h3>
+    </section>
 
-    <div ng-view></div>
+    <section id="featured-work" class="website-section">
+        <h3>Featured Work</h3>
+    </section>
 
-    <div>Angular seed app: v
-        <span app-version></span>
+    <section id="about" class="website-section">
+        <h3>About Me</h3>
+    </section>
+
+    <section id="contact" class="website-section">
+        <h3>Contact</h3>
+    </section>
+
+    <div id="footer">
+        Copyright @ 2014 Web Designer Minda Myers, All Rights Reserved. Crafted on a Mac in Sublime Text and built with HTML 5, CSS3, Angular JS and Underscore JS.
     </div>
-
-
 
 </body>
 
