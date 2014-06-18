@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Rouge-Script|Rammetto+One|Yanone+Kaffeesatz:300,400,700|Just+Me+Again+Down|Tangerine:400,700|Homemade+Apple|Delius+Unicase:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rouge-Script|Rammetto+One|Yanone+Kaffeesatz:300,400,700|Shadows+Into+Light|VT323|Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -36,11 +36,11 @@
 
     <div class="flexbox-container" id="main-menu">
         <div id="menu-items">
-            <a href="#intro">Home</a>
-            <a href="#featured-work">Portfolio</a>
+            <a href="#intro" class="before-initial">Home</a>
+            <a href="#featured-work" class="before-initial">Portfolio</a>
             <div id="initials">MM</div>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="after-initial">About</a>
+            <a href="#contact" class="after-initial">Contact</a>
         </div>
 
     </div>
@@ -48,10 +48,16 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
     <section id="intro" class="website-section">
-        <h3>Hello,
-            <br>my name is Minda
-            <br>and I am a
-            <br>front end web programmer.</h3>
+        <div id="mission-statement">
+            <span id="hello" class="title-text ">Hello, my name is</span>
+            <span id="name" class="title-text ">Minda Myers</span>
+            <span id="line3" class="title-text ">and I</span>
+            <span id="line4" class="title-text ">
+                <span class="inverse-color">want</span> to <span class="inverse-color">make</span>
+            </span>
+            <span id="line5" class="title-text ">human lives better</span>
+            <span id="line6" class="title-text ">with technology</span>
+        </div>
     </section>
 
     <section id="featured-work" class="website-section">
