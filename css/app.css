@@ -72,6 +72,7 @@ h3 {
     text-transform: uppercase;
     font-size: 200%;
     padding: 0px 7px;
+    font-weight: 300;
 }
 
 #menu-items {
@@ -83,81 +84,6 @@ h3 {
     text-align: center;
 }
 
-/* Intro Styles */
-#mission-statement {
-    display: flex;
-    flex-direction: column;
-    max-height: 80vh;
-}
-
-.title-text {
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-left: 10px;
-    font-weight: 700;
-    font-size: 350%;
-    font-family: 'Rouge Script', cursive;
-    text-align: center;
-    -webkit-text-stroke: .8px black;
-    text-shadow: 1px 1px 0 #fef6e9,-1px -1px 0 #fef6e9, 4px 4px 0 rgba(52,54,56,.2);
-    line-height: 1;
-}
-
-#hello, #line3, #line4, #line6 {
-    text-transform: uppercase;
-    text-shadow: none;
-    font-weight: 400;
-    -webkit-text-stroke: 2px black;
-}
-
-#hello, #line3, #line4  {
-    font-family: 'Shadows Into Light', cursive;
-}
-
-#name, #line5 {
-    font-family: 'Dawning of a New Day', cursive;
-}
-
-#name {
-    font-size: 770%;
-    font-weight: 900;
-    line-height: .8;
-    -webkit-text-stroke: 2.5px #1795B6;
-    color: #1795B6;
-    text-shadow: 6px 4px 3px rgba(192, 152, 43, 2);
-}
-
-#hello {
-    font-size: 350%;
-}
-
-#line3 {
-    font-size: 300%;
-}
-
-#line4 {
-    font-size: 475%;
-    text-shadow: 3px 3px 3px rgba(23, 149, 182, 1);
-}
-
-#line4 .inverse-color {
-    color: #C0982B;
-    -webkit-text-stroke: 2px #C0982B
-}
-
-#line5 {
-    font-size: 470%;
-    line-height: .6;
-    text-shadow: 1px 2px 6px rgba(248, 226, 113, 1)
-}
-
-#line6 {
-    font-size: 730%;
-    font-weight: 700;
-    font-family: 'VT323', cursive;
-    color: white;
-    -webkit-text-stroke: 0px;
-}
 
 
 /* Different screen widths */
@@ -187,8 +113,14 @@ h3 {
     }
 }
 
-@media all and (max-height: 600px) {
-    #mission-statement {
-        display: flex;
+/* Customizations for Sections */
+@media all and (min-height: 670px) {
+    .website-section {
+        height: auto;
+        min-height: 200px;
+        padding-bottom: 45px;
+    }
+    h3 {
+        margin-top: -10px;
     }
 }
