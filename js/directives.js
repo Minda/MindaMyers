@@ -8,4 +8,10 @@ angular.module('myApp.directives', []).
     return function(scope, elm, attrs) {
       elm.text(version);
     };
-  }]);
+  }])
+   .directive('featureBox', function() {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/_feature-box.html'
+        };
+    });

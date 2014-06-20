@@ -4,23 +4,29 @@
 
 angular.module('myApp.controllers', [])
   .controller('MindasGotThisUnderControl', ['$scope', function($scope) {
-        $scope.title = "minda";
 
-        console.log("MindaMyers.com debugging ensues...");
+        $scope.featuredWorks = new FeaturedWorks();
 
-        $scope.loadMainContent = function() {
-            console.log("Loading up the main stuffz");
-            $scope.myPage = "partials/main-content.html";
+        $scope.init = function() {
+            console.log("MindaMyers.com debugging ensues...");
+            console.dir(navigator);
         }
 
-        $scope.loadBlogContent = function() {
-            console.log("Do you *really* want to know my thoughts?");
-            $scope.myPage = "partials/blog.html";
+        $scope.init();
+
+        $scope.loadFeaturedWork = function(featuredWork) {
+            console.log("load featured work:"+featuredWork.title);
+            //load a new page partial
+
+
         }
 
-        $scope.loadMainContent();
+
 
   }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+  .controller('MainContentController', ['$scope', function($scope) {
 
+  }])
+  .controller('PortfolioController', ['$scope', function($scope) {
+    console.log("initilazing the portfolio controller");
   }]);

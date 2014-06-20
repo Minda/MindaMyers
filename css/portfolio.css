@@ -1,0 +1,54 @@
+#portfolio {
+    background-color: white;
+    color: black;
+}
+
+#portfolio-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1% 4%;
+    border-bottom: 1px solid black;
+}
+
+#project-info div {
+    display: inline-block;
+}
+
+#separator {
+    width: 2%;
+    background-color: black;
+    font-size: 200%;
+    margin: 0px 7px;
+    position: relative;
+    top: -5px;
+}
+
+.portfolio-tags {
+    text-transform: uppercase;
+    font-size: 120%;
+}
+
+.nav-arrow {
+    font-size: 3em;
+}
+
+.portfolio-title {
+    font-size: 300%;
+}
+
+#portfolio-main-content {
+    padding: 2% 4%;
+}
+
+img.portfolio-image {
+    max-width: 45%;
+    border: 1px solid black;
+    float: left;
+    margin-right: 6%;
+}
+
+.portfolio-description p {
+    line-height: 1.8;
+    font-size: 110%;
+}

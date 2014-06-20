@@ -10,7 +10,7 @@ Created on June 18, 2014 by Minda Myers
     width: auto;
     margin: auto;
     flex-direction: column;
-    max-height: 80vh;
+    max-height: 90vh;
 }
 
 #mission-statement .glyphicon {
@@ -38,11 +38,12 @@ Created on June 18, 2014 by Minda Myers
     text-transform: uppercase;
     text-shadow: none;
     font-weight: 400;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 3px black;
 }
 
 #hello, #line3, #line4  {
     font-family: 'Shadows Into Light', cursive;
+    color: black;
 }
 
 #name, #line5 {
@@ -54,13 +55,14 @@ Created on June 18, 2014 by Minda Myers
     font-size: 770%;
     font-weight: 900;
     line-height: .8;
-    -webkit-text-stroke: 2.5px #1795B6;
-    color: #1795B6;
+    -webkit-text-stroke: 2.5px #267EA6;
+    color: #37A1D2;
     text-shadow: 6px 4px 3px rgba(192, 152, 43, 2);
 }
 
 #hello {
     font-size: 350%;
+    padding-top: 70px;
 }
 
 #line3 {
@@ -81,22 +83,40 @@ Created on June 18, 2014 by Minda Myers
 #line5 {
     font-size: 470%;
     line-height: .6;
-    text-shadow: 1px 2px 6px rgba(248, 226, 113, 1)
+    text-shadow: 1px 2px 6px rgba(248, 226, 113, 1);
+    color: black;
 }
 
 #line6 {
-    font-size: 730%;
+    font-size: 770%;
     font-weight: 400;
     font-family: 'VT323', cursive;
     color: white;
     -webkit-text-stroke: .4px white;
-    border-bottom: 5px dotted #757373;
+    border-bottom: 1px dotted #757373;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
+#mission-statement span.title-text {
+    display: block
+}
 
 
 @media all and (max-height: 600px) {
     #mission-statement {
         display: flex;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 750px) {
+    #mission-statement {
+        font-size: 75%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #mission-statement {
+        font-size: 50%;
     }
 }
