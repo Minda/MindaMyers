@@ -7,8 +7,17 @@ Created on June 18, 2014 by Minda Myers
 /* Styles for main elements*/
 #mission-statement {
     display: flex;
+    width: auto;
+    margin: auto;
     flex-direction: column;
     max-height: 80vh;
+}
+
+#mission-statement .glyphicon {
+    font-size: 40%;
+    position: relative;
+    top: -7px;
+    width: 1%;
 }
 
 .title-text {
@@ -81,6 +90,7 @@ Created on June 18, 2014 by Minda Myers
     font-family: 'VT323', cursive;
     color: white;
     -webkit-text-stroke: .4px white;
+    border-bottom: 5px dotted #757373;
 }
 
 

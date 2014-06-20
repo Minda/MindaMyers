@@ -24,6 +24,7 @@ h3 {
     background-color: #CCBFFA;
     margin-top: 70px;
     padding-top: 25px;
+    display: flex;
 }
 
 #featured-work {
@@ -37,6 +38,12 @@ h3 {
 #contact {
     background-color: #CCBFFA;
 }
+
+#blog {
+    background-color: #CCBFFA;
+}
+
+
 
 #footer {
     text-align: center;
@@ -83,8 +90,6 @@ h3 {
     bottom: -7px;
     text-align: center;
 }
-
-
 
 /* Different screen widths */
 @media all and (max-width: 699px) {
