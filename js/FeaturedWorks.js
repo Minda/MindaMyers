@@ -1,6 +1,7 @@
-function FeaturedWorks() {
+function FeaturedWorks(data) {
     this.content = [];
     this.index = 0;
+    this.data = data;
 
     this.setIndex = function(index) {
         console.log("try to set index to "+index);
@@ -13,7 +14,7 @@ function FeaturedWorks() {
     }
 
     this.setupFeaturedWorks = function() {
-        console.log("Set up featured works");
+        /*console.log("Set up featured works");
         var items = ['a', 'b', 'c', '1', '2', '3'];
         var id = 0;
         var imageSource = 'img/ftg-thumbnail.png';
@@ -23,7 +24,15 @@ function FeaturedWorks() {
             content.push(featuredWork);
             id++;
         })
-        console.dir(content);
+        console.dir(content);*/
+
+        var content = this.content;
+
+        angular.forEach(this.data, function(entry) {
+            content.push(entry);
+        });
+
+
 
     }
 

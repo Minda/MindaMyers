@@ -3,13 +3,18 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-    .controller('MindasGotThisUnderControl', function($scope, $location) {
-
-        $scope.featuredWorks = new FeaturedWorks();
+    .controller('MindasGotThisUnderControl', function($scope, $http, $location) {
 
         $scope.init = function() {
             console.log("MindaMyers.com debugging ensues...");
             console.dir(navigator);
+            $http.get('js/content.json').then(function(res){
+                $scope.data = res.data;
+                console.dir($scope.data);
+            }).then(function() {
+                $scope.featuredWorks = new FeaturedWorks($scope.data);
+            })
+
         }
 
         $scope.init();
@@ -57,7 +62,6 @@ angular.module('myApp.controllers', [])
             if ($routeParams.id != null) {
                 $scope.featuredWorks.setIndex($routeParams.id);
             }
-
             $scope.loadPortfolioPiece($scope.featuredWorks.getIndex());
         }
 

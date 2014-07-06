@@ -47,7 +47,8 @@
 }
 
 img.portfolio-image {
-    max-width: 45%;
+    max-width: 55%;
+    max-height: 65vh;
     border: 1px solid black;
     float: left;
     margin-right: 6%;

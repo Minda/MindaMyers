@@ -1,0 +1,43 @@
+[
+{ "id":"0", "title":"Stanford NIMS", "tags":["Angular JS", "Front End", "RESTful API", "JavaScript", "UnderscoreJS"], "img":"img/nims.png",
+    "description": ["Designed and developed the entire front end for a multi-site MRI research data sharing application in Angular JS. Collaborated with developers and users to create mockups and implement features such as data discovery, search and application administration.",
+    "Once this software is deployed, it will enable access to and encourage sharing of MRI research data across multiple reputable US educational institutions."]
+},
+{ "id":"1", "title":"Castlight Health", "tags":["JavaScript", "Front End", "HAML", "SASS", "Rails"], "img":"img/castlight.jpg",
+    "description": ["Implemented a style guide of design suggestions by building a library of reusable compontents for Castlight's Front End. Introduced Twitter Bootstrap components, reorganized existing code, and created new components with HAML, SASS, and JavaScript."]
+},
+{ "id":"2", "title":"MindaMyers.com", "tags":["Angular JS", "Front End","CSS3"], "img":"img/mm.png",
+    "description": ["Created a responive design, dynamaic content web portfolio with Angular JSS and CSS3.",
+    "Site is best viewed on a modern browser, such as Chrome or Firefox",
+    "Mission Statement: Where many designers opt to use an image for complex text, I created complex typography effects with Google Web Fonts and CSS3. The Mission Statement has been coded using relative font size, text stroke, and text shadow effects.",
+    "Featured Work: Crafted resposive design divs to display links to portfolio pieces, and then created an Angular JS powered nagivation system between portfolio items.",
+    "Responsive Design: Try resizing your window width or looking at the site on a mobile device to sport resposive design features."]
+},
+{ "id":"3", "title":"Freeing the Goddess", "tags":["WordPress", "CMS", "CSS", "JavaScript"], "img":"img/ftg-home.png",
+    "description": ["..."]
+},
+{ "id":"4", "title":"Just One Thing", "tags":["Startup Weekend", "Design"], "img":"img/J1T.png",
+    "description": ["This was a Startup Weekend Hackathon project. Brought together a team to make an app to track progress towards a life dream by doing just one action every day. App was inspired by a real life story."]
+},
+{ "id":"5", "title":"Hacktus", "tags":["PHP", "Web Design"], "img":"",
+    "description": ["Hacktus was intended to be a \"Cheat Sheet for Entreprenurs\", listing out resources and events in the Bay Area.",
+    "For this project, I experimented with switching roles and teaching my project partner to code PHP, while I worked on designing the User Interface and tried my hand at design."]
+},
+{ "id":"6", "title":"MIRI Visiting Fellow", "tags":["Research", "Report"], "img":"",
+    "description": ["Studied Existential Risk Reduction, Artifical Intelligence and Intelligence Amplification. MIRI was formally known as SIAI (Singularity Institute for Artificial Intelligence) and I took part in the Visiting Fellow Program; January - April 2012."]
+},
+{ "id":"7", "title":"Personal Neuro Devices", "tags":["Research", "Report"], "img":"img/pnd-app.png",
+    "description": ["Created a report on the EEG device landscape in North America. Facilitated a business partnership between Neurosky and Personal Neuro Devices. PND's current product line consists of games for Neurosky's Mind Wave Mobile."]
+},
+{ "id":"8", "title":"LightSail Energy", "tags":["Research", "Report", "Excel"], "img":"img/lightsail_logo1.gif",
+    "description": ["At LightSail Energy, I researched data sources for energy usage in the US, focusing on the states of California and Texas, and produced both a report on the data sources and a small database of energy usage data."]
+},
+{ "id":"9", "title":"National Research Council of Canada", "tags":["Java", "JSP", "Web Development"], "img":"",
+    "description": ["Wrote new modules and maintained a java portlet based CMS to enable sharing of research data.",
+    "Wrote a java web-based client satisfaction survey software and an admin interface to view results. "]
+},
+{ "id":"10", "title":"HB Studios (EA Games)", "tags":["Software Engineering"], "img":"img/hb.jpeg", "url":"www.hb-studios.com",
+    "description": ["Built menu systems for Electronic Arts’ (EA games) NBA Live ’09 on wii, xbox and pc."]
+}
+
+]
