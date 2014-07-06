@@ -1,13 +1,13 @@
 <div class="feature-box-border">
     <div class="feature-box-content" style="background-image:{{featuredWork.thumbnail}}">
-        <div class="feature-box-title">
+        <div class="feature-box-title" ng-click="loadFeaturedWork(featuredWork)">
             {{featuredWork.title}}
         </div>
         <div class="feature-box-tags">
                 <span ng-repeat="tag in featuredWork.tags">{{tag}}&nbsp;&nbsp;</span>
         </div>
         <div class="feature-box-links">
-            <a href="#/portfolio" class="feature-box-link">
+            <a href="#/portfolio?id={{featuredWork.id}}" class="feature-box-link">
                 <span class="glyphicon glyphicon-zoom-in"></span>
             </div>
         </div>

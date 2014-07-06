@@ -12,7 +12,7 @@ var mindaApp = angular.module('myApp', [
 
 mindaApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/me', {templateUrl: 'partials/main-content.html', controller: 'MainContentController'});
-  $routeProvider.when('/portfolio', {templateUrl: 'partials/_featured-work.html', controller: 'PortfolioController'});
+  $routeProvider.when('/portfolio', {templateUrl: 'partials/_featured-work.html', controller: 'MainContentController'});
   $routeProvider.otherwise({redirectTo: '/me'});
 }]);
 

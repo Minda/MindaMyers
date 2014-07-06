@@ -1,12 +1,12 @@
-<section id="portfolio" class="website-section">
+<section id="portfolio" class="website-section" ng-controller="PortfolioController">
     <div id="portfolio-summary">
-        <div id="previous-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-backward"></span></div>
+        <div id="previous-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-backward" ng-click="loadPrevItem()"></span></div>
         <div id="project-info">
-            <div class="portfolio-title"> Project Name </div>
+            <div class="portfolio-title"> {{featuredWork.title}} </div>
             <div id="separator"> &nbsp;</div>
-            <div class="portfolio-tags"> Tags </div>
+            <div class="portfolio-tags"> <span ng-repeat="tag in featuredWork.tags">{{tag}}&nbsp;&nbsp;</span> </div>
         </div>
-        <div id="next-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-forward"></span></div>
+        <div id="next-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-forward" ng-click="loadNextItem()"></span></div>
     </div>
     <div id="portfolio-main-content">
         <div class="portfolio-description">
