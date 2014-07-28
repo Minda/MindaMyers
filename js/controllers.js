@@ -5,6 +5,8 @@
 angular.module('myApp.controllers', [])
     .controller('MindasGotThisUnderControl', function($scope, $http, $location) {
 
+
+
         $scope.init = function() {
             console.log("MindaMyers.com debugging ensues...");
             console.dir(navigator);
@@ -23,14 +25,23 @@ angular.module('myApp.controllers', [])
             console.log("load featured work:"+featuredWork.title);
             //load a new page partial
             console.dir($location);
-
-
         }
 
+        $scope.$on('modeChange', function(event, mass) {
+            console.log(mass);
+            $scope.mode = _.first(mass);
+        });
 
     })
     .controller('MainContentController', function($scope) {
-
+        console.log("Load Main Content");
+        $scope.mode = "main";
+        $scope.$emit('modeChange', [$scope.mode]);
+    })
+    .controller('PortfolioContentController', function($scope) {
+        console.log("Load Portfolio Content");
+        $scope.mode = "portfolio";
+        $scope.$emit('modeChange', [$scope.mode]);
     })
     .controller('PortfolioController', function($scope, $route, $routeParams, $location) {
         console.log("initilazing the portfolio controller");

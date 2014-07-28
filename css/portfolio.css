@@ -11,12 +11,16 @@
     border-bottom: 1px solid black;
 }
 
+#portfolio-summary * {
+    display: inline-block;
+}
+
 #project-info div {
     display: inline-block;
 }
 
 #project-info {
-    width: 70%;
+    width: 90%;
     text-align: center;
 }
 
@@ -29,9 +33,13 @@
     top: -5px;
 }
 
-.portfolio-tags {
+.portfolio-tag {
+    background-color: #D2B537;
+    color: #1C67A7;
     text-transform: uppercase;
-    font-size: 120%;
+    font-size: 115%;
+    padding: 2px 3px;
+    border-radius: 2px;
 }
 
 .nav-arrow {
@@ -40,6 +48,7 @@
 
 .portfolio-title {
     font-size: 300%;
+    font-weight: 500;
 }
 
 #portfolio-main-content {
@@ -57,4 +66,14 @@ img.portfolio-image {
 .portfolio-description p {
     line-height: 1.8;
     font-size: 110%;
+}
+
+
+#profile-image {
+    max-width: 115px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid white;
 }

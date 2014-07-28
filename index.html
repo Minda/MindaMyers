@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/directives.css" />
     <link rel="stylesheet" href="css/mission-statement.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
@@ -28,12 +29,20 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-route.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular-sanitize.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/FeaturedWorks.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.tip').tooltip();
+        });
+    </script>
 
 </head>
 
@@ -43,7 +52,8 @@
         <div id="menu-items" ng-click="loadMainContent()">
             <a href="#me?scrollTo=#intro" class="before-initial">Home</a>
             <a href="#me?scrollTo=featured-work" class="before-initial">Portfolio</a>
-            <div id="initials">MM</div>
+            <a href="#/portfolio" class="initials" ng-if="mode === 'main'">MM</a>
+            <a href="#" class="initials" ng-if="mode === 'portfolio'">MM</a>
             <a href="#me?scrollTo=about" class="after-initial">About</a>
             <a href="#me?scrollTo=contact" class="after-initial">Contact</a>
         </div>

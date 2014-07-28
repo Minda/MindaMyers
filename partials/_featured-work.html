@@ -1,20 +1,23 @@
 <section id="portfolio" class="website-section" ng-controller="PortfolioController">
     <div id="portfolio-summary">
-        <div id="previous-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-backward" ng-click="loadPrevItem()"></span></div>
+        <div id="previous-item" class="nav-arrow tip" data-toggle="tooltip" data-placement="top" delay="0" title="Previous Featured Work"> <span class="glyphicon glyphicon-step-backward" ng-click="loadPrevItem()"></span></div>
         <div id="project-info">
-            <div class="portfolio-title"> {{featuredWork.title}} </div>
-            <div id="separator"> &nbsp;</div>
-            <div class="portfolio-tags"> <span ng-repeat="tag in featuredWork.tags">{{tag}}&nbsp;&nbsp;</span> </div>
+            <div class="portfolio-title"> {{featuredWork.title}} </div>&nbsp;&nbsp;&nbsp;
+            <!--<div id="separator"> &nbsp;</div>-->
+            <div class="portfolio-tags" ng-repeat="tag in featuredWork.tags"> <span class="portfolio-tag">{{tag}}</span> &nbsp; </div>
         </div>
-        <div id="next-item" class="nav-arrow"> <span class="glyphicon glyphicon-step-forward" ng-click="loadNextItem()"></span></div>
+        <div id="next-item" class="nav-arrow" data-toggle="tooltip" data-placement="left" delay="0" title="Next Featured Work"> <span class="glyphicon glyphicon-step-forward" ng-click="loadNextItem()"></span></div>
     </div>
     <div id="portfolio-main-content">
-        <div class="portfolio-description">
-            <img class="portfolio-image" ng-if="featuredWork.img != ''" src="{{featuredWork.img}}"  />
-            <p ng-repeat="paragraph in featuredWork.description">
-                {{paragraph}}
-            </p>
-        </div>
+        <img class="portfolio-image" ng-if="featuredWork.img != ''" src="{{featuredWork.img}}"  />
+        <p ng-repeat="paragraph in featuredWork.description">
+            {{paragraph}}
+        </p>
+        <p>
+        <hr ng-if="featuredWork.url != undefined || featuredWork.year != undefined">
+        <span ng-if="featuredWork.url != undefined"> Site: <a target="_blank" href="http://{{featuredWork.url}}">{{featuredWork.url}}</a><br/></span>
+        <span ng-if="featuredWork.year != undefined"> Year: {{featuredWork.year}} </span>
+        </p>
     </div>
 </section>
 

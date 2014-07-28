@@ -15,21 +15,22 @@
     margin-left: auto;
     margin-bottom: 20px;
     display: inline-block;
-
-    width: 23vw;
+    width: 215px;
     border: 1px solid #C3B4A0;
-    min-width: 300px;
-    background-color: #37A1D2;
+    min-width: 200px;
+    background-color: #333333;
+    border-radius: 10px;
+    max-height: 150px;
 }
 .feature-box-border {
-    border: 7px solid white;
+    border: 2px solid #2FA0D4;
     width: 100%;
     height: 100%;
     display: flex;
-    height: 200px;
+    border-radius: 10px;
+    height: 150px;
 }
 .feature-box .feature-box-content {
-    height: 140px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -43,21 +44,25 @@
     color: white;
     font-size: 200%;
     font-weight: 300;
+    line-height: 1;
 }
 
 .feature-box-tags {
-
+    color: #9B9B9B;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 94%;
+    font-weight: 200;
 }
 
 #feature-boxes .glyphicon {
-    font-size: 135%;
-    background-color: #D2B537;
+    font-size: 195%;
+    opacity: .6;
+    color: #2FA0D4;
     width: 36px;
     height: 33px;
     padding-top: 5px;
     padding-right: 2px;
     border-radius: 15px;
-    border: 1px solid black;
 }
 
 .feature-box-links {

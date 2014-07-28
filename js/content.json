@@ -1,20 +1,29 @@
 [
-{ "id":"0", "title":"Stanford NIMS", "tags":["Angular JS", "Front End", "RESTful API", "JavaScript", "UnderscoreJS"], "img":"img/nims.png",
+{ "id":"0", "title":"Stanford NIMS", "tags":["Angular JS", "Front End", "RESTful API", "JavaScript"], "img":"img/nims.png", "url":"talks.stanford.edu/video/nims/nims_version2_preview.mov",
     "description": ["Designed and developed the entire front end for a multi-site MRI research data sharing application in Angular JS. Collaborated with developers and users to create mockups and implement features such as data discovery, search and application administration.",
-    "Once this software is deployed, it will enable access to and encourage sharing of MRI research data across multiple reputable US educational institutions."]
+    "Once this software is deployed, it will enable access to and encourage sharing of MRI research data across multiple reputable US educational institutions.",
+    "This software is yet to be deployed publically.",
+    "Click on the url to view a demo."
+    ]
+},
+{ "id":"12", "title":"Outdoor Pet Care", "tags":["UX", "Prototype"], "img":"img/outdoor.png", "url":"www.flinto.com/p/3604e8f6",
+    "description": ["Converted mockups into a functional iPhone prototype for a client's dog walking / adventures business.",
+    "Used flinto to create the prototype and sketch to create extra screens and assets.",
+    "Browse to the URL below on a mobile device to download a prototype."]
 },
 { "id":"1", "title":"Castlight Health", "tags":["JavaScript", "Front End", "HAML", "SASS", "Rails"], "img":"img/castlight.jpg",
-    "description": ["Implemented a style guide of design suggestions by building a library of reusable compontents for Castlight's Front End. Introduced Twitter Bootstrap components, reorganized existing code, and created new components with HAML, SASS, and JavaScript."]
+    "description": ["Implemented a style guide of design suggestions by building a library of reusable components for Castlight's Front End. Introduced Twitter Bootstrap components, reorganized existing code, and created new components with HAML, SASS, and JavaScript."]
 },
 { "id":"2", "title":"MindaMyers.com", "tags":["Angular JS", "Front End","CSS3"], "img":"img/mm.png",
-    "description": ["Created a responive design, dynamaic content web portfolio with Angular JSS and CSS3.",
+    "description": ["Created a responsive design, dynamic content web portfolio with Angular JSS and CSS3.",
     "Site is best viewed on a modern browser, such as Chrome or Firefox",
     "Mission Statement: Where many designers opt to use an image for complex text, I created complex typography effects with Google Web Fonts and CSS3. The Mission Statement has been coded using relative font size, text stroke, and text shadow effects.",
-    "Featured Work: Crafted resposive design divs to display links to portfolio pieces, and then created an Angular JS powered nagivation system between portfolio items.",
-    "Responsive Design: Try resizing your window width or looking at the site on a mobile device to sport resposive design features."]
+    "Featured Work: Crafted responsive design divs to display links to portfolio pieces, and then created an Angular JS powered navigation system between portfolio items.",
+    "Responsive Design: Try resizing your window width or looking at the site on a mobile device to spot the responsive design features."]
 },
-{ "id":"3", "title":"Freeing the Goddess", "tags":["WordPress", "CMS", "CSS", "JavaScript"], "img":"img/ftg-home.png",
-    "description": ["..."]
+{ "id":"3", "title":"Freeing the Goddess", "tags":["WordPress", "CMS", "CSS", "JavaScript"], "img":"img/ftg-home.png", "url":"freeingthegoddess.net", "year":"2013",
+    "description": ["Redesigned a collaborative art website by implementing a new Wordpress theme.",
+    ""]
 },
 { "id":"4", "title":"Just One Thing", "tags":["Startup Weekend", "Design"], "img":"img/J1T.png",
     "description": ["This was a Startup Weekend Hackathon project. Brought together a team to make an app to track progress towards a life dream by doing just one action every day. App was inspired by a real life story."]
@@ -38,6 +47,11 @@
 },
 { "id":"10", "title":"HB Studios (EA Games)", "tags":["Software Engineering"], "img":"img/hb.jpeg", "url":"www.hb-studios.com",
     "description": ["Built menu systems for Electronic Arts’ (EA games) NBA Live ’09 on wii, xbox and pc."]
+},
+{ "id":"11", "title":"Women in Technology Society", "tags":["Community Building"], "img":"img/wits.png", "url":"wits.cs.dal.ca", "year":"2007",
+    "description": ["Founded a society for women in technology in Dalhousie University's Computer Science Department while pursuing my undergrad in order to create community support for women pursuing a degree in computer science.",
+    "At the time of my undergrad, women comprised 10-15% of the undergraduate program.",
+    "This society still exists and is active today and I received the 2007 Computer Science Leadership Award in recognition of my contributions."]
 }
 
 ]
