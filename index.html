@@ -13,15 +13,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Rouge-Script|Rammetto+One|Yanone+Kaffeesatz:300,400,700|Shadows+Into+Light|VT323|Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/directives.css" />
-    <link rel="stylesheet" href="css/mission-statement.css" />
-    <link rel="stylesheet" href="css/portfolio.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
 
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
@@ -46,29 +42,23 @@
 
 </head>
 
-<body ng-controller="MindasGotThisUnderControl">
+<body ng-controller="">
 
-    <div class="flexbox-container" id="main-menu">
-        <div id="menu-items" ng-click="loadMainContent()">
-            <a href="#me?scrollTo=#intro" class="before-initial">Home</a>
-            <a href="#me?scrollTo=featured-work" class="before-initial">Portfolio</a>
-            <a href="#/portfolio" class="initials" ng-if="mode === 'main'">MM</a>
-            <a href="#" class="initials" ng-if="mode === 'portfolio'">MM</a>
-            <a href="#me?scrollTo=about" class="after-initial">About</a>
-            <a href="#me?scrollTo=contact" class="after-initial">Contact</a>
-        </div>
-    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">Are you kidding me? You are using a very <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and step into our already available technological future.</p>
   <![endif]-->
 
-    <div id="main-body">
-        <div ng-view id="page-content"></div>
+    <div id="container">
+        <div class="row">
+            <div class="title col-sm-12 col-md-10 col-md-offset-2">MindaMyers.com</div>
+            <div class="subtitle col-md-10 col-md-offset-2">Portfolio of Minda Myers, a silicon valley based UX sorceress</div>
+        </div>
 
-        <div id="footer">
-            Copyright @ 2014 Web Designer Minda Myers, All Rights Reserved.
-            <br>Crafted on a Mac in Sublime Text and built with HTML 5, CSS3, Angular JS and Underscore JS.
+    </div>
+    <div id="footer row">
+        <div class="footer-text">Copyright @ 2014 Web Designer Minda Myers, All Rights Reserved.
+        <br>Crafted on a Mac in Sublime Text and built with HTML 5, CSS3, Angular JS and Underscore JS.
         </div>
     </div>
 </body>
